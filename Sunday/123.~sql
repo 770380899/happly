@@ -1,0 +1,16 @@
+select * from v_administrator;
+create table v_menu(
+
+);
+select * from v_menu;
+delete from v_menu where id=1;
+insert into v_menu values(1,'功能管理','icon-user','1','','');
+insert into v_menu values(2,'管理员管理','icon-user','2','${pageContext.request.contextPath}/administrator/shouAllAdministrator','1'); 
+insert into v_menu values(3,'员工管理','icon-user','2','${pageContext.request.contextPath}/user/shou','1');  
+commit;
+
+select * from v_menu
+
+select *  from v_menu m 
+inner join v_menu m
+on id = parentId;

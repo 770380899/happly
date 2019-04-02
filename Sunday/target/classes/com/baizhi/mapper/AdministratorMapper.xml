@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.AdministratorDAO">
+	<select id="nameAndpassword" resultType="administrator">
+		select id,name,username,password,sex from v_administrator
+			where username=#{username} and password=#{password}
+	</select>
+	
+	<insert id="insertAdministrator" parameterType="administrator">
+		insert into v_administrator values(ad.nextval,#{name},#{username},#{password},#{sex})
+	</insert>
+	
+	<select id="MailAlone" resultType="administrator">
+		select * from v_administrator
+			where username=#{username}
+	</select>
+</mapper>

@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/resources/spring.xml,src/main/webapp/easyui/jquery.min.js,src/main/resources/springmvc.xml
+validator.Unchecked=

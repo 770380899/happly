@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.UserDAO">
+	<select id="shouUser" resultType="user">
+		select id,name,salary,age from v_user
+	</select>
+	
+	<insert id="insertUser" parameterType="user">
+		insert into v_user values(uk.nextval,#{name},#{salary},#{age})
+	</insert>
+	
+	<delete id="deleteUser" parameterType="int">
+		delete from v_user where id=#{id}
+	</delete>
+	
+	<update id="updateUser" parameterType="user">
+		update v_user set name=#{name},salary=#{salary},age=#{age} where id=#{id}
+	</update>
+	
+	<select id="idUser" resultType="user">
+		select id,name,salary,age from v_user where id=#{id}
+	</select>
+	
+</mapper>

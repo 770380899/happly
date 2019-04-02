@@ -1,0 +1,41 @@
+{
+	"total":101,
+	"rows":[
+    {
+        "id":"21",
+        "name":"小黑",
+        "age":24,
+        "salary":"2012-11-12",
+        "sex":true,
+        "address":"北京市昌平区",
+        "photo":"Dialog/aa.png"
+    },
+    {
+        "id":"22",
+        "name":"小白",
+        "age":11,
+        "salary":"2011-11-12",
+        "sex":true,
+        "address":"北京市昌平区",
+        "photo":"Dialog/aa.png"
+    },
+    {
+        "id":"23",
+        "name":"小三",
+        "age":23,
+        "salary":"2012-06-12",
+        "sex":false,
+        "address":"北京市昌平区",
+        "photo":"Dialog/aa.png"
+    },
+      {
+        "id":"23",
+        "name":"啊好",
+        "age":22,
+        "salary":"2005-06-12",
+        "sex":false,
+        "address":"北京市昌平区",
+        "photo":"Dialog/aa.png"
+    }
+]	
+}

@@ -1,0 +1,47 @@
+[
+    {
+        "id":"21",
+        "title":"系统管理",
+        "iconCls":"icon-user",
+        "href":"",
+        "lev":1,
+        "children":[
+            {
+                "id":"211",
+                "title":"用户管理",
+                "iconCls":"icon-user",
+                "href":"${pageContext.request.contextPath}/user/shou",
+                "lev":1
+            },
+            {
+                "id":"212",
+                "title":"部门管理",
+                "iconCls":"icon-user",
+                "href":"/back/dept/index.jsp",
+                "lev":1
+            }
+        ]
+    }, {
+        "id":"11",
+        "title":"数据管理",
+        "iconCls":"icon-edit",
+        "href":"",
+        "lev":1,
+        "children":[
+            {
+                "id":"111",
+                "title":"数据备份",
+                "iconCls":"icon-user",
+                "href":"/user.jsp",
+                "lev":1
+            },
+            {
+                "id":"112",
+                "title":"数据查询",
+                "iconCls":"icon-user",
+                "href":"dept.jsp",
+                "lev":1
+            }
+        ]
+    }
+]
