@@ -41,4 +41,10 @@ public interface SeckillDao {
      * @param paramMap
      */
     void killByProcedure(Map<String,Object> paramMap) ;
+	
+	  /**
+     * 使用存储过程执行秒杀
+     * @param paramMap
+     */
+    String dure(Map<String,Object> paramMap) ;
 }
